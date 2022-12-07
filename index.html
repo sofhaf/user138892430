@@ -33,42 +33,125 @@
         z-index: 1;
       }
 
-      .nose::before {
-        content: "";
+      .Rnostril {
         position: absolute;
-        clip-path: polygon(30% 40%, 47% 29%, 65% 32%, 72% 49%, 74% 66%, 71% 81%, 59% 85%, 46% 81%, 40% 64%, 42% 51%, 42% 41%);;
+        clip-path: polygon(30% 40%, 47% 29%, 65% 32%, 72% 49%, 74% 66%, 71% 81%, 59% 85%, 46% 81%, 40% 64%, 42% 51%, 42% 41%);
+        ;
         background-image: radial-gradient(ellipse, #092017 16%, #2b4e4f 61%);
-        width: 92px;
-        height: 111px;
-        top: 67px;
-        right: 0.5px;
-        z-index: -2;
+        width: 60px;
+        height: 55px;
+        left: 238px;
+        top: 259px;
+        z-index: 2;
+        transform: rotate(-20deg);
       }
 
-      .nose::after {
-        content: "";
+      .Lnostril {
         position: absolute;
-        clip-path: polygon(18% 0, 0 31%, 0 66%, 19% 100%, 58% 100%, 58% 78%, 31% 78%, 20% 60%, 21% 41%, 30% 24%, 57% 24%, 57% 0);
-        background-image: linear-gradient(to left,
-            #555950 69%, #66612f 81%, #d4cc88 96%);
-        width: 50px;
-        height: 55px;
-        right: 72px;
-        top: 7px;
-        z-index: -2;
+        clip-path: polygon(29% 26%, 40% 30%, 46% 42%, 36% 64%, 27% 57%, 22% 44%, 24% 32%);
+        background-image: linear-gradient(to left, #183533 66%, #537a7f 86%);
+        width: 88px;
+        height: 80px;
+        left: 190px;
+        top: 251px;
+        z-index: 2;
+        transform: rotate(-10deg);
       }
-      
+
       .bridge {
         position: absolute;
         background-image: linear-gradient(to right, #618f8f 47%, #9fc1b4 69%, #81b19b 88%);
-        clip-path: polygon(63% 26%, 42% 55%, 79% 67%, 73% 31%, 71% 25%);;
+        clip-path: polygon(63% 26%, 42% 55%, 79% 67%, 73% 31%, 71% 25%);
+        ;
         width: 290px;
         height: 290px;
         left: 75px;
         top: 90px;
         z-index: 0;
       }
+
+      .toplip {
+        position: absolute;
+        background-image: linear-gradient(to left, #30425f 3%, #2e6056 27%, #2d6249 77%, #364754 92%);
+        clip-path: polygon(0 65%, 47% 75%, 100% 67%, 88% 49%, 79% 41%, 62% 31%, 53% 34%, 46% 33%, 40% 31%, 20% 43%);
+        width: 270px;
+        height: 200px;
+        left: 100px;
+        top: 300px;
+        z-index: 0;
+      }
+
+      .bottomlip {
+        position: absolute;
+        background-image: linear-gradient(to left, #588889 6%, #458268 18%, #549680 86%, #62818d 96%);
+        clip-path: polygon(100% 43%, 76% 52%, 48% 54%, 23% 52%, 0 43%, 14% 30%, 24% 27%, 47% 31%, 66% 27%, 79% 30%, 92% 41%);
+        width: 233px;
+        height: 173px;
+        left: 124px;
+        bottom: -21px;
+        z-index: 1;
+        transform: rotate(2deg);
+      }
+
+      .snout {
+        position: absolute;
+        background-image: linear-gradient(to left, #a2cdca 6%, #6ea9b4 39%, #62a38b 64%, #7ba38e 75%);
+        clip-path: polygon(64% 30%, 61% 14%, 51% 23%, 46% 33%, 34% 44%, 17% 55%, 6% 71%, 18% 90%, 42% 97%, 84% 91%, 89% 69%, 91% 51%, 75% 43%);
+        width: 500px;
+        height: 500px;
+        left: -15px;
+        top: 32px;
+        z-index: -1;
+      }
+
+      .snout::before {
+        content: "";
+        position: absolute;
+        clip-path: polygon(43% 43%, 39% 65%, 46% 68%, 52% 65%, 55% 46%, 49% 42%);
+        background-image: radial-gradient(circle, #638882 14%, #5c757a 15%, #76b6b7 35%);
+        width: 270px;
+        height: 238px;
+        top: 168px;
+        left: 129px;
+        transform: rotate(-3deg);
+        z-index: 1;
+      }
       
+      .Reye {
+        position: absolute;
+        background-image: linear-gradient(to bottom right, #4f927f 27%, #4b6f81 46%, #6fd3d3 79%);
+        clip-path: polygon(43% 11%, 27% 25%, 22% 43%, 31% 59%, 49% 65%, 76% 69%, 88% 38%, 85% 23%, 73% 14%, 60% 9%);
+        width: 350px;
+        height: 340px;
+        right: -52px;
+        top: 27px;
+        z-index: -1;
+        transform: rotate(10deg);
+      }
+      
+        .Rbrow {
+        position: absolute;
+        clip-path: polygon(91% 25%, 82% 17%, 62% 10%, 40% 11%, 28% 15%, 27% 20%, 48% 23%, 65% 19%, 73% 19%);
+        background-image: linear-gradient(183deg, #cff2e9 0%, #426655 17%, #4d7a81 23%);
+        width: 268px;
+        height: 224px;
+        top: 35px;
+        left: 255px;
+        z-index: 1;
+        transform: rotate(6deg);
+      }
+      
+      .Leye {
+        position: absolute;
+        background-image: linear-gradient(#526b67 17%, #415f7c 37%, #629d8a 71%);
+        clip-path: polygon(73% 33%, 64% 23%, 57% 12%, 36% 9%, 15% 16%, 12% 30%, 18% 48%, 31% 58%, 50% 56%, 61% 50%, 69% 42%);
+        width: 400px;
+        height: 390px;
+        left: -56px;
+        top: 26px;
+        z-index: -1;
+      }
+
     </style>
   </head>
 
@@ -77,6 +160,14 @@
     <div class="frame">
       <div class="nose"></div>
       <div class="bridge"></div>
+      <div class="Rnostril"></div>
+      <div class="Lnostril"></div>
+      <div class="toplip"></div>
+      <div class="bottomlip"></div>
+      <div class="snout"></div>
+      <div class="Reye"></div>
+      <div class="Rbrow"></div>
+      <div class="Leye"></div>
 
     </div>
   </body>
