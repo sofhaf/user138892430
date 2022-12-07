@@ -3,38 +3,70 @@
 
   <head>
     <meta charset="utf-8">
-    <title>for sale</title>
+    <title>user138892430</title>
 
     <style>
-  
       body {
-        display: grid;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
+        height: 100vh;
+        background-color: rgba(192, 150, 128, 0.59);
       }
 
-      .pics {
-        width: 500px;
+      .frame {
+        height: 511px;
+        width: 511px;
+        border: 5px solid black;
+        position: relative;
       }
 
-      .text {
-        font-size: 222%;
-        color: rgb(128, 0, 0);
-        font-weight: bold;
+      .nose {
+        position: absolute;
+        background-image: radial-gradient(ellipse, #4e6a5f 6%, #9ac1b4 71%);
+        clip-path: polygon(20% 18%, 25% 13%, 49% 9%, 61% 15%, 81% 73%, 80% 85%, 66% 91%, 54% 89%, 49% 83%, 43% 89%, 36% 85%, 29% 91%, 15% 89%, 10% 81%);
+        width: 170px;
+        height: 125px;
+        left: 170px;
+        top: 200px;
+        z-index: 1;
+      }
+
+      .nose::before {
+        content: "";
+        position: absolute;
+        clip-path: polygon(30% 40%, 47% 29%, 65% 32%, 72% 49%, 74% 66%, 71% 81%, 59% 85%, 46% 81%, 40% 64%, 42% 51%, 42% 41%);;
+        background-image: radial-gradient(ellipse, #092017 16%, #2b4e4f 61%);
+        width: 92px;
+        height: 111px;
+        top: 67px;
+        right: 0.5px;
+        z-index: -2;
+      }
+
+      .nose::after {
+        content: "";
+        position: absolute;
+        clip-path: polygon(18% 0, 0 31%, 0 66%, 19% 100%, 58% 100%, 58% 78%, 31% 78%, 20% 60%, 21% 41%, 30% 24%, 57% 24%, 57% 0);
+        background-image: linear-gradient(to left,
+            #555950 69%, #66612f 81%, #d4cc88 96%);
+        width: 50px;
+        height: 55px;
+        right: 72px;
+        top: 7px;
+        z-index: -2;
       }
       
-      .hello {
-        font-size: 333%;
-        text-align: center;
-        font-weight: bold;
-        color: rgb(0, 0, 128);
-      }
-      
-       .message {
-        font-size: 150%;
-        color: rgb(128, 0, 0);
-        font-weight: bold;
+      .bridge {
+        position: absolute;
+        background-image: linear-gradient(to right, #618f8f 47%, #9fc1b4 69%, #81b19b 88%);
+        clip-path: polygon(63% 26%, 42% 55%, 79% 67%, 73% 31%, 71% 25%);;
+        width: 290px;
+        height: 290px;
+        left: 75px;
+        top: 90px;
+        z-index: 0;
       }
       
     </style>
@@ -42,44 +74,11 @@
 
   <body>
 
-    <br>
-    <div class="hello">ORGANIC TOMATOES</div>
-    <div class="hello">FOR SALE</div>
-    <br>
-    <div class="message">&nbsp;&nbsp;Hello!&nbsp; Here are some photos of our tomatoes<br>&nbsp;&nbsp;from last year. Respond directly to my initial<br>&nbsp;&nbsp;&nbsp;offer on email to pre-order for next harvest.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thank you, Olga :&#41;</div>
-    <br>
-    <div class="pics">
-      <div><img src="one.png" alt="eight organic home-grown tomatoes" width="100%"></div>
-      <div class="text">Eight for $1000</div>
+    <div class="frame">
+      <div class="nose"></div>
+      <div class="bridge"></div>
+
     </div>
-    <br><br><br>
-    <div class="pics">
-      <div><img src="two.png" alt="organic home-grown tomato 23.3 grams" width="100%"></div>
-      <div class="text">Grown without pesticides</div>
-    </div>
-    <br><br><br>
-    <div class="pics">
-      <div><img src="three.png" alt="organic home-grown tomato 27.6 grams" width="100%"></div>
-      <div class="text">All are heirloom</div>
-    </div>
-    <br><br><br>
-    <div class="pics">
-      <div><img src="four.png" alt="organic home-grown tomato 22.3 grams" width="100%"></div>
-      <div class="text">Sweet, flavorful and fragrant!</div>
-    </div>
-    <br><br><br>
-    <div class="pics">
-      <div><img src="five.png" alt="organic home-grown tomato 22.1 grams" width="100%"></div>
-      <div class="text">Home-grown with care</div>
-    </div>
-    <br><br><br>
-    <div class="pics">
-      <div><img src="six.png" alt="organic home-grown tomato 25.8 grams" width="100%"></div>
-      <div class="text">My kids love them and approve! <br><br> No gmo, no growth hormones, no chemical fertilizers. Grown at my home garden, away from road. Let me know if you want more information. Please respond to the initial email! This webpage is just for show. Best Wishes! Good Luck!</div>
-    </div>
-    <br><br><br>
-    
   </body>
 
 </html>
